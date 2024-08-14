@@ -48,7 +48,7 @@ const project: BareProject = {
 	version: pkg.version,
 };
 
-export function json<T>(status: number, json: T) {
+export function json<T>(status: number, json: T): Response {
 	const send = Buffer.from(JSON.stringify(json, null, '\t'));
 
 	return new Response(send, {
