@@ -35,7 +35,8 @@
 	],
 	"scripts": {
 		"build": "tsc",
-		"dev": "tsc --watch"
+		"dev": "tsc --watch",
+		"format": "prettier --write ."
 	},
 	"dependencies": {
 		"async-exit-hook": "^2.0.1",
